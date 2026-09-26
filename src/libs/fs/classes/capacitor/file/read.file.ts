@@ -1,10 +1,7 @@
 import type { Directory } from '@capacitor/filesystem';
 import { Filesystem, Encoding } from '@capacitor/filesystem';
 
-export async function readFile(
-  fileName: string,
-  directory?: Directory,
-): Promise<string> {
+export async function readFile(fileName: string, directory?: Directory): Promise<string> {
   const result = await Filesystem.readFile({
     path: fileName,
     directory,

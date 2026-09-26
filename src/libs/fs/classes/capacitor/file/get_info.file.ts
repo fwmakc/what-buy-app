@@ -3,10 +3,7 @@ import { Filesystem } from '@capacitor/filesystem';
 
 import type { ListItem } from '../../../interfaces/list.interface';
 
-export async function getInfoFile(
-  fileName: string,
-  directory?: Directory,
-): Promise<ListItem> {
+export async function getInfoFile(fileName: string, directory?: Directory): Promise<ListItem> {
   const fileInfo = await Filesystem.stat({
     path: fileName,
     directory,

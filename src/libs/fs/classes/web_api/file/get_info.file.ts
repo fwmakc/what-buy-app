@@ -1,15 +1,13 @@
 import type { ListItem } from '../../../interfaces/list.interface';
 
-export async function getInfoFile(
-  fileHandle: FileSystemFileHandle,
-): Promise<ListItem> {
+export async function getInfoFile(fileHandle: FileSystemFileHandle): Promise<ListItem> {
   if (!fileHandle) {
     return {};
   }
 
   const fileInfo = await fileHandle.getFile();
 
-  let fileName = '';
+  let fileName: string;
   let fileExtension = '';
 
   const fileNames = fileInfo.name?.split('.');

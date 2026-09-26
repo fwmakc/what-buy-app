@@ -4,10 +4,7 @@ import type { ListItem, ListOptions } from '../../interfaces/list.interface';
 import { selectDirDialog } from './dialog/select_dir.dialog';
 import { getInfoDir } from './dir/get_info.dir';
 
-export class WebApiDir implements Dir<
-  FileSystemDirectoryHandle,
-  FileSystemFileHandle
-> {
+export class WebApiDir implements Dir<FileSystemDirectoryHandle, FileSystemFileHandle> {
   currentDir?: FileSystemDirectoryHandle;
 
   constructor(dir?: FileSystemDirectoryHandle) {

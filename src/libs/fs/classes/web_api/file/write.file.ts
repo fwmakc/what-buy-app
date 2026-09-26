@@ -1,7 +1,4 @@
-export async function writeFile(
-  fileHandle: FileSystemFileHandle | null,
-  content: string,
-): Promise<void> {
+export async function writeFile(fileHandle: FileSystemFileHandle | null, content: string): Promise<void> {
   if (!fileHandle) {
     return;
   }

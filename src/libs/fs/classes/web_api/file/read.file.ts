@@ -1,6 +1,4 @@
-export async function readFile(
-  fileHandle: FileSystemFileHandle | null,
-): Promise<string> {
+export async function readFile(fileHandle: FileSystemFileHandle | null): Promise<string> {
   if (!fileHandle) {
     return '';
   }

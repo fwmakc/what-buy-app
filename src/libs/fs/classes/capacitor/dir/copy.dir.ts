@@ -1,9 +1,6 @@
 import { Filesystem } from '@capacitor/filesystem';
 
-export async function copyDir(
-  oldFilePath: string,
-  newFilePath: string,
-): Promise<void> {
+export async function copyDir(oldFilePath: string, newFilePath: string): Promise<void> {
   await Filesystem.mkdir({
     path: newFilePath,
     // directory: Directory.Documents,

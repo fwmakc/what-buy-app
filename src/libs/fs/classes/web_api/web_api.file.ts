@@ -12,10 +12,7 @@ import { renameFile } from './file/rename.file';
 import { writeFile } from './file/write.file';
 import { writeBytesFile } from './file/write_bytes.file';
 
-export class WebApiFile implements File<
-  FileSystemFileHandle,
-  FileSystemDirectoryHandle
-> {
+export class WebApiFile implements File<FileSystemFileHandle, FileSystemDirectoryHandle> {
   currentFile?: FileSystemFileHandle = undefined;
   currentDir?: FileSystemDirectoryHandle = undefined;
 

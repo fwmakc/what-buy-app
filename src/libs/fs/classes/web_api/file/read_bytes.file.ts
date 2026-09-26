@@ -1,6 +1,4 @@
-export async function readBytesFile(
-  fileHandle: FileSystemFileHandle | null,
-): Promise<Uint8Array> {
+export async function readBytesFile(fileHandle: FileSystemFileHandle | null): Promise<Uint8Array> {
   if (!fileHandle) {
     return new Uint8Array();
   }

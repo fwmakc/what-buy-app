@@ -5,9 +5,7 @@ interface TauriFilterType {
   extensions: string[];
 }
 
-export function convertFileTypesToTauri(
-  fileTypes?: FileTypes,
-): TauriFilterType[] | undefined {
+export function convertFileTypesToTauri(fileTypes?: FileTypes): TauriFilterType[] | undefined {
   if (!fileTypes || !Array.isArray(fileTypes)) {
     return;
   }

@@ -1,10 +1,4 @@
-import {
-  appCacheDir,
-  appDataDir,
-  documentDir,
-  homeDir,
-  resourceDir,
-} from '@tauri-apps/api/path';
+import { appCacheDir, appDataDir, documentDir, homeDir, resourceDir } from '@tauri-apps/api/path';
 
 import type { DefaultPaths } from '../../interfaces/default_paths.interface';
 
