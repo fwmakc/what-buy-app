@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "Decorators"],
+    "types": ["node", "vitest/globals"],
+
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "outDir": "./dist",
+    "rootDir": "./",
+
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "exactOptionalPropertyTypes": false,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "isolatedModules": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true
+  },
+  "include": [
+    "src/**/*",
+    "electron/**/*"
+  ],
+  "exclude": [
+    "build",
+    "coverage",
+    "dist",
+    "dist-ssr",
+    "node_modules",
+    "platforms",
+    "src-tauri",
+    "**/*.case.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}

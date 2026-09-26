@@ -1,0 +1,38 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "What buy app",
+  "version": "0.1.0",
+  "identifier": "com.fwmakc.what-buy-app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:8090",
+    "beforeDevCommand": "cross-env VITE_BUILD_TARGET=tauri VITE_RUNTIME_PLATFORM=desktop npm run dev",
+    "beforeBuildCommand": "npm run tauri:compile"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "What buy app",
+        "width": 800,
+        "height": 600,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "../public/icon-only.png",
+      "../public/app.svg",
+      "../public/app.icns",
+      "../public/app.ico"
+    ]
+  }
+}

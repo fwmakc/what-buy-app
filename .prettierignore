@@ -1,0 +1,12 @@
+build
+coverage
+dist
+dist-ssr
+node_modules
+platforms
+src-tauri
+*.md
+*.json
+*.min.js
+package-lock.json
+yarn.lock
